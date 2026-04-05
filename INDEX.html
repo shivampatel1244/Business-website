@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manoj Hair Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1>Manoj Hair Salon</h1>
+    <p>Premium hair styling, coloring, spa, and bridal services designed to make you look your best.</p>
+    <a href="#booking" class="btn">Book Appointment</a>
+  </div>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      We are a modern hair salon focused on personalized styling, premium products,
+      and a relaxing customer experience. Our expert stylists specialize in trendy
+      cuts, hair treatments, and special event styling.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="grid services">
+      <div class="card"><h3>Haircut & Styling</h3><p>₹499</p></div>
+      <div class="card"><h3>Hair Spa</h3><p>₹899</p></div>
+      <div class="card"><h3>Hair Coloring</h3><p>₹1499</p></div>
+      <div class="card"><h3>Bridal Styling</h3><p>₹2999</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="grid gallery">
+      <div class="gallery-item">Style 1</div>
+      <div class="gallery-item">Style 2</div>
+      <div class="gallery-item">Style 3</div>
+      <div class="gallery-item">Style 4</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="grid services">
+      <div class="card">Amazing service and very professional stylists!</div>
+      <div class="card">Best salon experience in town. Loved the haircut.</div>
+      <div class="card">Clean, stylish, and great staff behavior.</div>
+    </div>
+  </section>
+
+  <section id="booking">
+  <h2>Book an Appointment</h2>
+  <form onsubmit="showModal(event)">
+  <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+  <input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+
+  <select id="service" name="service" required>
+    <option value="">Select Service</option>
+    <option>Haircut & Styling</option>
+    <option>Hair Spa</option>
+    <option>Hair Coloring</option>
+    <option>Bridal Styling</option>
+  </select>
+
+  <input type="date" id="date" name="date" required>
+  <textarea id="request" name="request" rows="4" placeholder="Special request"></textarea>
+  <button type="submit" class="btn">Submit Booking</button>
+</form>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3 id="modalMessage"></h3>
+      <br>
+      <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>©️ 2026 Manoj Hair Salon | Morbi</p>
+  </footer>
+  <script src="salon.js"></script>
+  </body>
+</html>
